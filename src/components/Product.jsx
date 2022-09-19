@@ -1,4 +1,5 @@
 import Inventory from './Inventory.jsx';
+import './Product.css';
 
 function Product(props) {
   return (

@@ -10,10 +10,14 @@ function Product(props) {
         <table>
           <tr>
             <td className="cell-left">
-              <label for="glaze_og">Glazing:</label>
+              <label for={Inventory[props.id].name}>Glazing:</label>
             </td>
             <td className="cell-right">
-              <select name="glaze_og" id="glaze_og" className="glaze-menu" onchange="glazingChange(this)">
+              <select
+                name={Inventory[props.id].name}
+                id={Inventory[props.id].name}
+                className="glaze-menu"
+                onchange="glazingChange(this)">
                 <option value="0">Keep Original</option>
                 <option value="0">Sugar Milk</option>
                 <option value="0.5">Vanilla Milk</option>
@@ -26,20 +30,20 @@ function Product(props) {
               <p>Pack size:</p>
             </td>
             <td className="cell-right">
-              <input type="radio" id="og_1" name="pack_size" value="1" onclick="updatePackSize(this)" checked />
-              <label for="og_1" className="size-menu">
+              <input type="radio" id="1" name={`${props.id} pack_size`} value="1" checked />
+              <label for="1" className="size-menu">
                 1
               </label>
-              <input type="radio" id="og_3" name="pack_size" value="3" onclick="updatePackSize(this)" />
-              <label for="og_3" className="size-menu">
+              <input type="radio" id="3" name="${props.id} pack_size" value="3" />
+              <label for="3" className="size-menu">
                 3
               </label>
-              <input type="radio" id="og_6" name="pack_size" value="6" onclick="updatePackSize(this)" />
-              <label for="og_6" className="size-menu">
+              <input type="radio" id="6" name="${props.id} pack_size" value="6" />
+              <label for="6" className="size-menu">
                 6
               </label>
-              <input type="radio" id="og_12" name="pack_size" value="12" onclick="updatePackSize(this)" />
-              <label for="og_12" className="size-menu size-menu-12">
+              <input type="radio" id="12" name="${props.id} pack_size" value="12" />
+              <label for="12" className="size-menu size-menu-12">
                 12
               </label>
             </td>

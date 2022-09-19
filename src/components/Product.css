@@ -10,6 +10,7 @@
   margin: 35px;
   width: 260px;
   display: inline-block;
+  vertical-align: top;
 }
 .price,
 .product-name {

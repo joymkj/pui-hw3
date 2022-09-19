@@ -29,21 +29,22 @@ function Product(props) {
             <td>
               <p>Pack size:</p>
             </td>
+            {/* {`${props.id} 1`} */}
             <td className="cell-right">
-              <input type="radio" id="1" name={`${props.id} pack_size`} value="1" checked />
+              <input type="radio" id={`${props.id}+1`} name="pack_size" value="1" checked />
               <label for="1" className="size-menu">
                 1
               </label>
-              <input type="radio" id="3" name="${props.id} pack_size" value="3" />
-              <label for="3" className="size-menu">
+              <input type="radio" id={`${props.id}+3`} name="pack_size" value="3" />
+              <label for={`${props.id}+3`} className="size-menu">
                 3
               </label>
-              <input type="radio" id="6" name="${props.id} pack_size" value="6" />
-              <label for="6" className="size-menu">
+              <input type="radio" id={`${props.id}+6`} name="pack_size" value="6" />
+              <label for={`${props.id}+6`} className="size-menu">
                 6
               </label>
-              <input type="radio" id="12" name="${props.id} pack_size" value="12" />
-              <label for="12" className="size-menu size-menu-12">
+              <input type="radio" id={`${props.id}+12`} name="pack_size" value="12" />
+              <label for={`${props.id}+12`} className="size-menu size-menu-12">
                 12
               </label>
             </td>

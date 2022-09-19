@@ -1,15 +1,9 @@
-import originalRoll from './../assets/original-cinnamon-roll.jpg';
-import appleRoll from './../assets/apple-cinnamon-roll.jpg';
-import raisinRoll from './../assets/raisin-cinnamon-roll.jpg';
-import walnutRoll from './../assets/walnut-cinnamon-roll.jpg';
-import doubleChocolateRoll from './../assets/double-chocolate-cinnamon-roll.jpg';
-import strawberryRoll from './../assets/strawberry-cinnamon-roll.jpg';
 import Inventory from './Inventory.jsx';
 
 function Product(props) {
   return (
     <div className="product">
-      <img src={require('./../assets/double-chocolate-cinnamon-roll.jpg')} alt={Inventory[props.id].name} />
+      <img src={process.env.PUBLIC_URL + Inventory[props.id].url} alt={Inventory[props.id].name} />
       <h2 className="product-name">{Inventory[props.id].name}</h2>
       <form>
         <table>

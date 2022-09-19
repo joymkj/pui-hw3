@@ -1,11 +1,10 @@
-import logo from './../assets/logo-01.svg';
 import './Navbar.css';
 
 function Navbar() {
   return (
     <div className="Header">
       <div className="header">
-        <img src={logo} alt="Bun Bun bake shop logo" width="400" />
+        <img src={process.env.PUBLIC_URL + '/assets/logo-01.svg'} alt="Bun Bun bake shop logo" width="400" />
         <div className="navbar">
           <nav>
             <ul>

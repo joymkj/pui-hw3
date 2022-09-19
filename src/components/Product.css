@@ -8,12 +8,14 @@
 
 .product {
   margin: 35px;
+  width: 260px;
+  display: inline-block;
 }
 .price,
 .product-name {
   font-weight: bold;
   font-size: 25px;
-  width: 110%;
+  width: 120%;
 }
 
 .product img {

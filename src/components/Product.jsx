@@ -4,7 +4,7 @@ import './Product.css';
 function Product(props) {
   return (
     <div className="product">
-      <img src={process.env.PUBLIC_URL + Inventory[props.id].url} alt={Inventory[props.id].name} />
+      <img src={process.env.PUBLIC_URL + Inventory[props.id].url} alt={Inventory[props.id].name} width="260px" />
       <h2 className="product-name">{Inventory[props.id].name}</h2>
       <form>
         <table>

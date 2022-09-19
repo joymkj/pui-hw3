@@ -1,20 +1,4 @@
-.gallery {
+.Gallery {
   max-width: 1070px;
   margin: auto;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  padding-bottom: 330px;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  height: 300px;
 }

@@ -4,30 +4,12 @@ import './Gallery.css';
 function Gallery() {
   return (
     <div className="Gallery">
-      <div className="gallery">
-        <div className="row">
-          <div className="col">
-            <Product id="0" />;
-          </div>
-          <div className="col">
-            <Product id="1" />;
-          </div>
-          <div className="col">
-            <Product id="2" />;
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <Product id="3" />;
-          </div>
-          <div className="col">
-            <Product id="4" />;
-          </div>
-          <div className="col">
-            <Product id="5" />;
-          </div>
-        </div>
-      </div>
+      <Product id="0" />
+      <Product id="1" />
+      <Product id="2" />
+      <Product id="3" />
+      <Product id="4" />
+      <Product id="5" />
     </div>
   );
 }

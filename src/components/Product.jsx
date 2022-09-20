@@ -31,7 +31,7 @@ function Product(props) {
             </td>
             <td className="cell-right">
               <input type="radio" id={`${props.id}+1`} name={`${props.id}`} value="1" defaultChecked />
-              <label for="1" className="size-menu">
+              <label for={`${props.id}+1`} className="size-menu">
                 1
               </label>
               <input type="radio" id={`${props.id}+3`} name={`${props.id}`} value="3" />
